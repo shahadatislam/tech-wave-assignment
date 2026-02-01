@@ -1,0 +1,54 @@
+.primary-bg{
+    background-color:rgba(26, 11, 46, 1);
+}
+
+.primary-text-color{
+    color: rgba(255, 255, 255, 1);
+}
+
+.primary-gradient{
+    background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: transparent;
+    background-clip: text;
+}
+
+.primary-btn{
+    border-radius: 30px;
+     background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    padding: 10px 30px;
+}
+.secondary-btn{
+    border-radius: 30px;
+    border: 2px solid rgba(0, 255, 136, 1);
+    color: rgba(0, 255, 136, 1);
+    padding: 10px 30px;
+}
+.banner-btn{
+    background-color: rgba(0, 255, 136, 1);
+    padding: 2px 12px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 180px;
+    font-weight: 600;
+}
+
+
+/* banner section Styles */
+
+.banner{
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-img{
+    width: 250px;
+    height: 250px;
+    background-image: url(../assets/hero-circle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
