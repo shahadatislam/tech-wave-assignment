@@ -5,6 +5,11 @@
 .primary-text-color{
     color: rgba(255, 255, 255, 1);
 }
+.secondary-text-color{
+    color: rgba(0, 255, 136, 1);
+}
+
+
 
 .primary-gradient{
     background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
@@ -48,7 +53,11 @@
     background-image: url(../assets/hero-circle.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
-    
+    background-repeat: no-repeat;  
 }
+
+/* Podcast section styles */
+.fa-star{
+    font-size: 1.5rem;
+}
+
