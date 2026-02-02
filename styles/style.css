@@ -82,3 +82,16 @@
     border-top-right-radius: 20px;
     width: 100%;
 }
+
+.social-link{
+    width: 25px;
+    height:25px;
+    padding:5px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.host{
+     border-radius: 20px;
+     background-color: rgba(53, 17, 101, 0.4);
+}
