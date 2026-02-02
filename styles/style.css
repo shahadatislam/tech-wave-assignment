@@ -64,7 +64,7 @@
 /* TechWave section Styles */
 
 .techwave-container{
-    background-color: rgba(35, 14, 61, 1);;
+    background-color: rgba(35, 14, 61, 1);
 }
 
 .techwave-parts{
@@ -94,4 +94,13 @@
 .host{
      border-radius: 20px;
      background-color: rgba(53, 17, 101, 0.4);
+}
+
+.footer{
+    background-color: rgba(35, 14, 61, 1);
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
