@@ -13,11 +13,11 @@
 
       <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="w-[1600px]">
     <!-- Header Section Start -->
-    <header class="w-5xl mx-auto primary-bg">
+    <header class=" w-[1200px] mx-auto primary-bg">
         <!-- Nav Section Start -->
-        <nav class="flex justify-between p-6 items-center mx-[100px]">
+        <nav class="flex justify-between p-6 items-center mx-[80px]">
             <h1 class="text-3xl font-extrabold primary-text-color">Tech<span class="primary-gradient">Wave</span></h1>
             <ul class="flex">
                 <li class=" primary-text-color">About</li>
@@ -55,7 +55,7 @@
     <!-- ------Header Section End--------------- -->
 
     <!-- Podcast section start -->
-     <section class="w-5xl mx-auto primary-bg px-[100px]">
+     <section class="w-[1200px] mx-auto primary-bg">
         <h1 class="text-5xl font-extrabold primary-text-color text-center mb-6 pt-[80px]">About the Podcast</h1>
         <p class="primary-text-color text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
         We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
@@ -86,35 +86,81 @@
 
 
     <!-- TechWave section start -->
-     <section class="w-5xl mx-auto primary-bg">
+     <section class="w-[1200px] mx-auto techwave-container pt-[80px]">
         <h1 class="text-5xl font-extrabold primary-text-color text-center">Why Choose TechWave</h1>
 
-        <div class="techwave-container">
-            <div>
-                <img src="./assets/headphone.png" alt="">
-                <h3 class="text-2xl text-white font-bold">Premium Audio Quality</h3>
+        <div class="grid grid-cols-3 grid-rows-3 gap-10 py-[80px] mx-[80px]">
+            <div class="row-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
+                <img class="" src="./assets/headphone.png" alt="">
+                <h3 class="text-2xl text-white font-bold my-2">Premium Audio Quality</h3>
                 <p class="primary-text-color">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
             </div>
-            <div>
+            <div class="col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/device.png" alt="">
-                <h3 class="text-2xl text-white font-bold">Listen on the go with seamless mobile experience and offline downloads.</p>
+                <h3 class="text-2xl text-white font-bold my-2">Mobile Friendly</h3>
+                <p class="primary-text-color">Listen on the go with seamless mobile experience and offline downloads.</p>
             </div>
-            <div>
+            <div class="col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/location.png" alt="">
-                <h3 class="text-2xl text-white font-bold">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                <h3 class="text-2xl text-white font-bold my-2">Global Community</h3>
+                <p class="primary-text-color">Connect with tech enthusiasts from over 120 countries worldwide.</p>
             </div>
-            <div>
+            <div class=" col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/interviews.png" alt="">
-                <h3 class="text-2xl text-white font-bold">Premium Audio Quality</h3>
+                <h3 class="text-2xl text-white font-bold my-2">Premium Audio Quality</h3>
                 <p class="primary-text-color">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
             </div>
-            <div>
+            <div class="techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/resource.png" alt="">
-                <h3 class="text-2xl text-white font-bold">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                <h3 class="text-2xl text-white font-bold my-2">Rich Resources</h3>
+                <p class="primary-text-color">Access show notes, transcripts, and additional learning materials for every episode.</p>
             </div>
         </div>
      </section>
     <!-- TechWave section End -->
+
+    <!-- Featured section start  -->
+     <section class="w-[1200px] mx-auto primary-bg pt-[80px]">
+            <h1 class="text-5xl font-extrabold primary-text-color text-center">Featured Episodes</h1>
+
+            <div class="grid grid-cols-3 gap-6 py-[80px] mx-[80px]">
+                <div class="features">
+                    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/Ag3zMEJtHAA?si=BF0JJUCWNcbXvWa7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="p-4">
+                        <h3 class="text-2xl text-white font-bold my-2">The Future of AI in Everyday Life</h3>
+                        <p class="primary-text-color my-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">42 min</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/sMbDwjAcSV0?si=KQvTSkaPhfqHxXFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="p-4">
+                        <h3 class="text-2xl text-white font-bold my-2">Building Better Habits for Remote Work</h3>
+                        <p class="primary-text-color my-2">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                        <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">35 min</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/-RVlkAYAcRA?si=JT_NP8Z494kYmgP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="p-4">
+                        <h3 class="text-2xl text-white font-bold my-2">Career Growth in Tech: A Roadmap</h3>
+                        <p class="primary-text-color my-2">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                        <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">51 min</p>
+                    </div>
+                </div>
+            </div>
+     </section>
+    <!-- Featured section End  -->
+
+
+    <!-- Host section Start  -->
+     <section>
+        <img src="./assets/" alt="">
+     </section>
+    <!-- Host section End  -->
+
+
+
 
 </body>
 </html>
