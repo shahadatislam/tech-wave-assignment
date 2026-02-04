@@ -207,4 +207,12 @@
     }
 }
 
+ /* Responsive for large devices */
+ 
+@media screen and (min-width:577px) {
+    .hamburger-menu{
+        display: none;
+    }
+}
+
 /*----------------- CSS styles End----------------- */
