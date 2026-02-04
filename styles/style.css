@@ -1,3 +1,5 @@
+/*-------- Common Styles------- */
+
 .primary-bg{
     background-color:rgba(26, 11, 46, 1);
 }
@@ -5,11 +7,10 @@
 .primary-text-color{
     color: rgba(255, 255, 255, 1);
 }
+
 .secondary-text-color{
     color: rgba(0, 255, 136, 1);
 }
-
-
 
 .primary-gradient{
     background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
@@ -22,12 +23,24 @@
      background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     padding: 10px 30px;
 }
+
+.primary-btn:hover{
+    background: linear-gradient(to top,rgba(145, 0, 248, 1),rgba(251, 9, 180, 1),rgba(247, 233, 63, 1));
+}
+
 .secondary-btn{
     border-radius: 30px;
     border: 2px solid rgba(0, 255, 136, 1);
     color: rgba(0, 255, 136, 1);
     padding: 10px 30px;
 }
+
+.secondary-btn:hover{
+    transform: rotate(360deg);
+    transition: 2s ease;   
+}
+
+
 .banner-btn{
     background-color: rgba(0, 255, 136, 1);
     padding: 2px 12px;
@@ -38,8 +51,15 @@
     font-weight: 600;
 }
 
+.banner-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 255, 136, 1);
+    color: white;
+    transition: 2s ease;
+}
 
-/* banner section Styles */
+
+/*-------- banner section Styles-------- */
 
 .banner{
     background-image: url(../assets/hero-bg.png);
@@ -56,12 +76,15 @@
     background-repeat: no-repeat;  
 }
 
-/* Podcast section styles */
+
+/*------------- Podcast section styles------------ */
 .fa-star{
     font-size: 1.5rem;
 }
 
-/* TechWave section Styles */
+
+
+/*------------- TechWave section Styles-------------- */
 
 .techwave-container{
     background-color: rgba(35, 14, 61, 1);
@@ -71,6 +94,9 @@
     border-radius: 30px;
     background-color: rgba(53, 17, 101, 0.4);
 }
+
+
+/*------------ Features Section Styles--------------- */
 
 .features{
      border-radius: 20px;
@@ -91,10 +117,15 @@
     border-radius: 8px;
 }
 
+/*--------------- Host section Styles--------------- */
+
 .host{
      border-radius: 20px;
      background-color: rgba(53, 17, 101, 0.4);
 }
+
+
+/*------------ Footer section styles -----------------*/
 
 .footer{
     background-color: rgba(35, 14, 61, 1);
@@ -102,5 +133,78 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+
+
+
+/* Responsive Styles for small devices */
+
+@media screen and (max-width:576px) {
+    nav ul, .nav-btn{
+        display: none;
+    }
+
+    .banner, 
+    .podcast-container,
+    .techwave-container,
+    .features-container,
+    .host-container{
+        padding: 20px;
+    }
+
+    .banner-img{
+        margin-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner-main-img{
+        width: 60px;
+        height: 90px;
+    }
+
+    .primary-btn{
+        padding: 5px 8px;
+        font-size: 8px;
+    }
+
+    .secondary-btn{
+        padding: 5px 8px;
+        font-size: 8px;
+    }
+
+    .banner-btn{
+        padding: 2px 12px;
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+
+    .techwave{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .techwave-parts{
+        width: 345px;
+    }
+
+    .host{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon-container{
+        justify-content: center;
+    }
+    
+    .footer-links{
+        font-size: small;
+        display: grid;
+        grid-template-columns: 80px 80px;  
+    }
+}
+
+/*----------------- CSS styles End----------------- */

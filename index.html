@@ -4,66 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave Assignment</title>
-    <!-- font awesome link -->
+    <!-----------font awesome link ----------->
      <script src="https://kit.fontawesome.com/69869fe5d0.js" crossorigin="anonymous"></script>
 
-     <!-- tailwind link -->
+     <!----------tailwind link ------------>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-
+    <!-----------External CSS link ---------->
       <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="w-[1600px]">
-    <!-- Header Section Start -->
-    <header class=" w-[1200px] mx-auto primary-bg">
-        <!-- Nav Section Start -->
-        <nav class="flex justify-between p-6 items-center mx-[80px]">
+<body>
+    <!---------------------------------------------------
+                    Header Section Start 
+     -------------------------------------------------->
+    <header class="lg:w-[1600px] mx-auto primary-bg">
+
+        <!----------------------------------------- 
+                        Nav Section Start
+        ------------------------------------------->
+        <nav class="lg:w-[1200px] mx-auto flex justify-between p-6 items-center">
             <h1 class="text-3xl font-extrabold primary-text-color">Tech<span class="primary-gradient">Wave</span></h1>
             <ul class="flex">
                 <li class=" primary-text-color">About</li>
                 <li class="mx-4  primary-text-color">Episodes</li>
                 <li class=" primary-text-color">Host</li>
             </ul>
-            <button class="flex items-center primary-btn primary-text-color">Subscribe <i class="fa-solid fa-arrow-right ml-2"></i></button>
+            <button class="nav-btn flex items-center font-bold primary-btn primary-text-color">Subscribe <i class="fa-solid fa-arrow-right ml-2"></i></button>
+            <img class="sm:sr-only not-sr-only" src="/assets/hamburger-menu.png" alt="">
         </nav>
-        <!-- Nav Section End -->
+        <!----------------- Nav Section End--------------- -->
 
 
-        <!-- Banner Section start -->
+        <!--------------------------------------------------------
+                            Banner Section start 
+         --------------------------------------------------------->
 
-        <section class="flex flex-col text-center p-14 banner">
+        <section class="lg:w-[1600px] mx-auto flex flex-col text-center p-[100px] banner">
             <div class="flex flex-col items-center">
                 
                     <div class="banner-img flex items-center justify-center">
-                        <img src="assets/microphone.png" alt="">
+                        <img class="banner-main-img" src="assets/microphone.png" alt="">
                     </div>
                 
                 <button class="banner-btn">NEW</button>
             </div>
             <div>
-                <h1 class="text-6xl font-extrabold primary-text-color mt-10">TechWave</h1>
-                <p class="my-4 text-white">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color mt-8">TechWave</h1>
+                <p class="my-6 primary-text-color text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm">Your daily dose of tech insights, productivity hacks, and personal growth</p>
                 <div class="flex justify-center gap-4">
-                    <button class="primary-btn flex items-center gap-2"> <img src="assets/apple-podcast.png" alt="">Listen on Spotify</button> 
-                    <button class="secondary-btn flex items-center gap-2"> <img src="assets/message.png" alt="">Subscribe</button>
+                    <button class="primary-btn primary-text-color font-bold flex items-center gap-2"> <img src="assets/apple-podcast.png" alt="">Listen on Spotify</button> 
+                    <button class="secondary-btn font-bold flex items-center gap-2"> <img src="assets/message.png" alt="">Subscribe</button>
                 </div>
             </div>
         </section>
-        <!-- Banner Section End -->
+        <!----------------- Banner Section End -------------------->
     </header>
 
-    <!-- ------Header Section End--------------- -->
+    <!-- -------------------Header Section End------------------- -->
 
-    <!-- Podcast section start -->
-     <section class="w-[1200px] mx-auto primary-bg">
-        <h1 class="text-5xl font-extrabold primary-text-color text-center mb-6 pt-[80px]">About the Podcast</h1>
-        <p class="primary-text-color text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+
+
+    <!----------------------------------------------------------------
+                            Podcast section start 
+     ---------------------------------------------------------------->
+
+     <section class="podcast-container lg:w-[1600px] mx-auto primary-bg">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color text-center mb-6 pt-[100px]">About the Podcast</h1>
+        <p class="primary-text-color text-center text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
         We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
         and share stories of personal growth from industry leaders. <br> <br>
 
         Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
 
-        <div class="grid grid-cols-4 text-center gap-16 pt-[80px] pb-[80px]">
+        <div class="lg:w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 text-center gap-10 pt-[100px] pb-[100px]">
             <div>
                 <h1 class="secondary-text-color text-4xl font-black">150K+</h1>
                 <p class="primary-text-color">Monthly Listeners</p>
@@ -82,85 +95,96 @@
             </div>
         </div>
      </section>
-    <!-- Podcast section End -->
+    <!--------------------- Podcast section End --------------------->
 
 
-    <!-- TechWave section start -->
-     <section class="w-[1200px] mx-auto techwave-container pt-[80px]">
-        <h1 class="text-5xl font-extrabold primary-text-color text-center">Why Choose TechWave</h1>
+    <!---------------------------------------------------------------
+                            TechWave section start 
+     ---------------------------------------------------------------->
 
-        <div class="grid grid-cols-3 grid-rows-3 gap-10 py-[80px] mx-[80px]">
+     <section class="lg:w-[1600px] mx-auto techwave-container pt-[100px]">
+        <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color text-center">Why Choose TechWave</h1>
+
+        <div class="techwave lg:w-[1200px] mx-auto grid grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-3 xl:grid-rows-3 2xl:grid-cols-3 2xl:grid-rows-3 gap-10 pt-[50px] pb-[100px]">
             <div class="row-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img class="" src="./assets/headphone.png" alt="">
-                <h3 class="text-2xl text-white font-bold my-2">Premium Audio Quality</h3>
-                <p class="primary-text-color">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Premium Audio Quality</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
             </div>
             <div class="col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/device.png" alt="">
-                <h3 class="text-2xl text-white font-bold my-2">Mobile Friendly</h3>
-                <p class="primary-text-color">Listen on the go with seamless mobile experience and offline downloads.</p>
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Mobile Friendly</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">Listen on the go with seamless mobile experience and offline downloads.</p>
             </div>
             <div class="col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/location.png" alt="">
-                <h3 class="text-2xl text-white font-bold my-2">Global Community</h3>
-                <p class="primary-text-color">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Global Community</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">Connect with tech enthusiasts from over 120 countries worldwide.</p>
             </div>
-            <div class=" col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
+            <div class="col-span-2 techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/interviews.png" alt="">
-                <h3 class="text-2xl text-white font-bold my-2">Premium Audio Quality</h3>
-                <p class="primary-text-color">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Premium Audio Quality</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
             </div>
             <div class="techwave-parts p-8 flex flex-col items-start justify-center">
                 <img src="./assets/resource.png" alt="">
-                <h3 class="text-2xl text-white font-bold my-2">Rich Resources</h3>
-                <p class="primary-text-color">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Rich Resources</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">Access show notes, transcripts, and additional learning materials for every episode.</p>
             </div>
         </div>
      </section>
-    <!-- TechWave section End -->
+    <!---------------------------- TechWave section End --------------------------->
 
-    <!-- Featured section start  -->
-     <section class="w-[1200px] mx-auto primary-bg pt-[80px]">
-            <h1 class="text-5xl font-extrabold primary-text-color text-center">Featured Episodes</h1>
 
-            <div class="grid grid-cols-3 gap-6 py-[80px] mx-[80px]">
+    <!------------------------------------------------------------------------------
+                                    Featured section start  
+     -------------------------------------------------------------------------------->
+
+     <section class="lg:w-[1600px] mx-auto primary-bg pt-[100px]">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color text-center">Featured Episodes</h1>
+
+            <div class="features-container lg:w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 pt-[50px] pb-[100px]">
                 <div class="features">
                     <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/Ag3zMEJtHAA?si=BF0JJUCWNcbXvWa7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="p-4">
-                        <h3 class="text-2xl text-white font-bold my-2">The Future of AI in Everyday Life</h3>
-                        <p class="primary-text-color my-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">The Future of AI in Everyday Life</h3>
+                        <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color my-2">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
                         <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">42 min</p>
                     </div>
                 </div>
                 <div class="features">
                     <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/sMbDwjAcSV0?si=KQvTSkaPhfqHxXFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="p-4">
-                        <h3 class="text-2xl text-white font-bold my-2">Building Better Habits for Remote Work</h3>
-                        <p class="primary-text-color my-2">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
+                        <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Building Better Habits for Remote Work</h3>
+                        <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color my-2">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
                         <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">35 min</p>
                     </div>
                 </div>
                 <div class="features">
                     <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/-RVlkAYAcRA?si=JT_NP8Z494kYmgP_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="p-4">
-                        <h3 class="text-2xl text-white font-bold my-2">Career Growth in Tech: A Roadmap</h3>
-                        <p class="primary-text-color my-2">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
+                        <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Career Growth in Tech: A Roadmap</h3>
+                        <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color my-2">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
                         <p class="secondary-text-color flex items-center gap-2 font-bold"><img src="./assets/clock.png" alt="">51 min</p>
                     </div>
                 </div>
             </div>
      </section>
-    <!-- Featured section End  -->
+    <!---------------------- Featured section End  ----------------------------->
 
 
-    <!-- Host section Start  -->
-     <section class="w-[1200px] mx-auto pb-[80px] primary-bg pt-[80px]">
-        <div class="host p-10 flex items-center gap-10 mx-[80px] ">
+    <!-----------------------------------------------------------------
+                                Host section Start 
+    ------------------------------------------------------------------->
+
+     <section class="lg:w-[1600px] mx-auto pb-[100px] primary-bg pt-[100px] host-container">
+            <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color text-center">Meet the Host</h1>
+        <div class="lg:w-[1200px] mx-auto host p-10 mt-[50px] flex items-center gap-10">
             <img src="./assets/host.png" alt="">
             <div>
-                <h3 class="text-2xl text-white font-bold my-2">Alex Kumar</h3>
-                <p class="primary-text-color my-2">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                <div class="flex items-center gap-2">
+                <h3 class="text-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl primary-text-color font-bold my-2">Alex Kumar</h3>
+                <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color my-2">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                <div class="icon-container flex items-center gap-2 mt-4">
                     <img class="social-link" src="./assets/linkedin.png" alt="">
                     <img class="social-link" src="./assets/x.png" alt="">
                     <img class="social-link" src="./assets/instagram.png" alt="">
@@ -169,22 +193,24 @@
             </div>
         </div>
      </section>
-    <!-- Host section End  -->
+    <!--------------------------- Host section End  -------------------------------->
 
-     <!-- Footer Section Start -->
-      <footer class="w-[1200px] text-center footer mx-auto py-12">
-         <h1 class="text-5xl font-extrabold primary-text-color">Tech<span class="primary-gradient">Wave</span></h1>
 
-         <div class="flex items-center gap-8 my-4 justify-center">
+     <!-------------------------------------------------------------------------
+                                    Footer Section Start 
+      --------------------------------------------------------------------------->
+
+      <footer class="lg:w-[1600px] text-center footer mx-auto py-[100px]">
+         <h1 class="text-3xl md:text-4xl lg:text-6xl xl:text-6xl 2xl:text-6xl font-extrabold primary-text-color">Tech<span class="primary-gradient">Wave</span></h1>
+
+         <div class="footer-links lg:w-[1200px] mx-auto flex gap-8 items-center my-6 justify-center">
             <p class="flex items-center gap-2 primary-text-color"><img src="./assets/spotify.png" alt="">Spotify</p>
             <p class="flex items-center gap-2 primary-text-color"><img src="./assets/apple-podcast.png" alt="">Apple Podcasts</p>
             <p class="flex items-center gap-2 primary-text-color"><img src="./assets/youtube-podcast.png" alt="">YouTube</p>
             <p class="flex items-center gap-2 primary-text-color"><img src="./assets/twitter.png" alt="">Twitter</p>
          </div>
-         <p class="primary-text-color">© 2026 TechWave Podcast. All rights reserved.</p>
+         <p class="text-[10px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm primary-text-color">© 2026 TechWave Podcast. All rights reserved.</p>
       </footer>
-     <!-- Footer Section End -->
-
-
+     <!----------------------------- Footer Section End --------------------------->
 </body>
 </html>
